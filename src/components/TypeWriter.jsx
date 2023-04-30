@@ -58,7 +58,7 @@ const Typewriter = () => {
   return (
     <div>
       <TypewriterWords
-        words={["FullStack Developer", "Graphic Designer", "Freelancer"]}
+        words={["FullStack Developer", "Graphic Designer", "Freelancer", " "]}
       />
     </div>
   );
