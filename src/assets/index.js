@@ -37,7 +37,7 @@ import abdulkareem from './abdulkareem.jpg'
 import kishanth from './kishanth.jpg'
 import steeban from './steeban.jpg'
 
-
+import resume from './Afrar-Resume-web.pdf'
 
 export {
   logo,
@@ -73,4 +73,5 @@ export {
   abdulkareem,
   kishanth,
   steeban,
+  resume,
 };

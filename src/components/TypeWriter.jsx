@@ -7,7 +7,7 @@ const TypewriterWords = ({ words }) => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const timeout = setTimeout(() => {
       setCurrentLetterIndex((prevLetterIndex) => {
         if (!isDeleting) {
           if (prevLetterIndex < words[currentWordIndex].length - 1) {
@@ -15,7 +15,7 @@ const TypewriterWords = ({ words }) => {
           } else {
             setTimeout(() => {
               setIsDeleting(true);
-            }, 2000);
+            }, 2500);
             return prevLetterIndex;
           }
         } else {
@@ -30,22 +30,30 @@ const TypewriterWords = ({ words }) => {
           }
         }
       });
-    }, 150);
+    }, 100);
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(timeout);
   }, [currentWordIndex, currentLetterIndex, isDeleting, words]);
 
   return (
     <h2 className="text-[#804dee] font-black">
       {words[currentWordIndex].substring(0, currentLetterIndex + 1)}
       <motion.span
-        initial={{ opacity: 0 }}
+        layout
         animate={{
-          opacity: isDeleting ? 0 : 1,
-          scale: isDeleting ? 0.5 : 1,
+          opacity:
+            !isDeleting &&
+            currentLetterIndex === words[currentWordIndex].length - 1
+              ? [1, 0, 1]
+              : [1, 1],
         }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{
+          repeatDelay: 0.3,
+          duration: 0.2,
+          repeat: Infinity,
+          repeatType: "loop",
+          ease: "linear",
+        }}
         className="text-white"
       >
         _
@@ -58,7 +66,7 @@ const Typewriter = () => {
   return (
     <div>
       <TypewriterWords
-        words={["FullStack Developer", "Graphic Designer", "Freelancer", " "]}
+        words={["FullStack Developer", "Graphic Designer", "Freelancer"]}
       />
     </div>
   );

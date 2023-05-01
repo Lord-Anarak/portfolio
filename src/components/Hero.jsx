@@ -4,6 +4,8 @@ import { styles } from "../styles";
 import { profile } from "../assets";
 import Typewriter from "./TypeWriter";
 
+import { resume } from "../assets";
+
 const Hero = () => {
   return (
     <section className="relative w-full h-screen">
@@ -22,7 +24,17 @@ const Hero = () => {
           <div className={`${styles.heroSubText} mt-2 text-white-100 flex`}>
             I am a &nbsp; {<Typewriter />}
           </div>
+          <div className="mt-10">
+            <a
+              href={resume}
+              download
+              className="bg-[#804dee] text-secondary p-3 px-5 rounded-lg font-bold text-sm hover:text-white"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
+
         <motion.div
           animate={{ y: [5, -5, 5] }}
           transition={{
@@ -31,7 +43,7 @@ const Hero = () => {
             duration: 5,
             ease: "easeOut",
           }}
-          className="absolute right-0 mt-32 sm:mt-0 flex justify-center sm:justify-end"
+          className="absolute right-0 mt-48 sm:mt-0 flex justify-center sm:justify-end"
         >
           <img src={profile} alt="profile" className="sm:w-[75%] w-full" />
         </motion.div>
