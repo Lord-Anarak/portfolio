@@ -119,7 +119,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
+    title: "Junior Web Developer",
     company_name: "ImproTech",
     icon: impro,
     iconBg: "#383E56",
@@ -158,7 +158,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
+    title: "Full Stack Developer",
     company_name: "NAS Management",
     icon: nas,
     iconBg: "#E6DEDD",
