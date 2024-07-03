@@ -22,6 +22,7 @@ import {
   ageCalc,
   eCommerce,
   restCountries,
+  aora,
   threejs,
   steeban,
   abdulkareem,
@@ -57,7 +58,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Graphic Designer",
+    title: "Mobile App Developer",
     icon: creator,
   },
 ];
@@ -154,7 +155,7 @@ const experiences = [
       "Testing Terminals in UAT environment.",
       "Handling Customer Complaints.",
       "Provide technical support in new acquiring project implementations, relating to new products and systems.",
-      "Conducting demonstrations on backend portals operations relating to payment gateway transactions."
+      "Conducting demonstrations on backend portals operations relating to payment gateway transactions.",
     ],
   },
   {
@@ -201,27 +202,33 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Age Calculator",
+    name: "Aora Video Sharing App",
     description:
-      "The Age Calculator app calculates your age in years, months, and days. Simply input your date of birth and receive accurate results. Validation errors are also handled.",
+      "Aora is a dynamic video sharing application where users can sign up, log in, log out, save videos, and upload their own videos.",
     tags: [
       {
-        name: "HTML",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "CSS",
+        name: "reactnative",
         color: "blue-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "Expo",
         color: "green-text-gradient",
       },
+      {
+        name: "Nativewind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Appwrite",
+        color: "orange-text-gradient",
+      },
     ],
-    image: ageCalc,
-    source_code_link: "https://github.com/Lord-Anarak/age-calculator",
-    demo_link: "https://lord-anarak.github.io/age-calculator/",
+    image: aora,
+    source_code_link: "https://github.com/Lord-Anarak/aora",
+    demo_link:
+      "https://github.com/Lord-Anarak/aora/releases/download/v1.0/aora.apk",
   },
+
   {
     name: "Product Page",
     description:
@@ -261,6 +268,28 @@ const projects = [
     image: restCountries,
     source_code_link: "https://github.com/Lord-Anarak/rest-countries-api",
     demo_link: "https://lord-anarak.github.io/rest-countries-api/",
+  },
+  {
+    name: "Age Calculator",
+    description:
+      "The Age Calculator app calculates your age in years, months, and days. Simply input your date of birth and receive accurate results. Validation errors are also handled.",
+    tags: [
+      {
+        name: "HTML",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ageCalc,
+    source_code_link: "https://github.com/Lord-Anarak/age-calculator",
+    demo_link: "https://lord-anarak.github.io/age-calculator/",
   },
 ];
 

@@ -29,15 +29,16 @@ import nas from "./company/NAS.png";
 import ageCalc from "./ageCalc.jpg";
 import eCommerce from "./eCommerce.jpg";
 import restCountries from "./restCountries.jpg";
+import aora from "./aora.jpg";
 
-import profile from './Profile.png'
-import profile2 from './Profile2.png'
+import profile from "./Profile.png";
+import profile2 from "./Profile2.png";
 
-import abdulkareem from './abdulkareem.jpg'
-import kishanth from './kishanth.jpg'
-import steeban from './steeban.jpg'
+import abdulkareem from "./abdulkareem.jpg";
+import kishanth from "./kishanth.jpg";
+import steeban from "./steeban.jpg";
 
-import resume from './Afrar-Resume-web.pdf'
+import resume from "./Afrar-Resume-web.pdf";
 
 export {
   logo,
@@ -68,6 +69,7 @@ export {
   ageCalc,
   eCommerce,
   restCountries,
+  aora,
   profile,
   profile2,
   abdulkareem,
