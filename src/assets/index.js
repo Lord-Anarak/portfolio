@@ -38,7 +38,7 @@ import abdulkareem from "./abdulkareem.jpg";
 import kishanth from "./kishanth.jpg";
 import steeban from "./steeban.jpg";
 
-import resume from "./Afrar-Resume-web.pdf";
+import resume from "./Afrar-Resume.pdf";
 
 export {
   logo,
