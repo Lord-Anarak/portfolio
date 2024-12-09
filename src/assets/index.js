@@ -23,7 +23,7 @@ import threejs from "./tech/threejs.svg";
 
 import impro from "./company/impro.png";
 import pizza from "./company/pizza.png";
-import hnb from "./company/hnb.png";
+import spectra from "./company/spectra.png";
 import nas from "./company/NAS.png";
 
 import ageCalc from "./ageCalc.jpg";
@@ -64,7 +64,7 @@ export {
   threejs,
   impro,
   pizza,
-  hnb,
+  spectra,
   nas,
   ageCalc,
   eCommerce,
